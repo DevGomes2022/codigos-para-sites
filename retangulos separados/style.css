@@ -1,0 +1,31 @@
+#rect1, #rect2, #rect3 {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    transition: 0.3s;
+}
+
+.box {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+#rect1{
+    background-color: #2CB78C;
+    border-radius: 10px;
+}
+
+#rect2 {
+    background-color: #29A880;
+    border-radius: 10px;
+    top: 20px; /* distance between rectangles */
+    left: 20px;
+}
+
+#rect3 {
+    background-color: #1F9772;
+    border-radius: 10px;
+    top: 40px; /* distance between rectangles */
+    left: 40px;
+}

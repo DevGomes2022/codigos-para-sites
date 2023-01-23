@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrinho de Compras</title>
+  <style>
+    /* Estilos CSS */
+    #product {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    #cart {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    #cart h2 {
+      margin-top: 0;
+    }
+    #cart ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    #cart li {
+      border-bottom: 1px solid #ccc;
+      padding: 10px;
+    }
+    #cart .total {
+      font-weight: bold;
+    }
+    #cart .remove-btn {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="product">
+    <h3>Produto</h3>
+    <p>Nome: Camiseta</p>
+    <p>Preço: R$ 30,00</p>
+    <button id="add-to-cart">Adicionar ao carrinho</button>
+  </div>
+  <div id="cart">
+    <h2>Carrinho</h2>
+    <ul>
+      <!-- Lista de itens no carrinho -->
+    </ul>
+    <p class="total">Total: R$ 0,00</p>
+  </div>
+
+  <script>
+    // Variável para armazenar o valor total do carrinho
+    var total = 0;
+
+    // Adicionar evento de clique ao botão "Adicionar ao carrinho"
+    document.getElementById("add-to-cart").addEventListener("click", function() {
+      // Adicionar item ao carrinho
+      var ul = document.querySelector("#cart ul");
+      var li = document.createElement("li");
+      li.innerHTML = "Camiseta - R$ 30,00 <button class='remove-btn'>Retirar do carrinho</button>";
+      ul.appendChild(li);
+
+      // Adicionar evento de clique ao botão "Retirar do carrinho"
+      li.querySelector(".remove-btn").addEventListener("click", function() {
+        // Remover item do carrinho
+        ul.removeChild(li);
+
+        // Atualizar valor total do carrinho
+        total -= 30;
+        document.querySelector("#cart .total").innerHTML = "Total: R$ " + total + ",00";
+      });
+        // Atualizar valor total do carrinho
+        total += 30;
+        document.querySelector("#cart .total").innerHTML = "Total: R$ " + total + ",00";
+      });
+  </script>
+</body>
+</html>

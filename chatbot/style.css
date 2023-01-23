@@ -1,0 +1,108 @@
+#chatbot {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: rgb(199, 199, 243);
+}
+
+#chatbot-header {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#chatbot-messages {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#chatbot-input {
+    width: 100%;
+    margin-top: 10px;
+}
+
+body {
+    background-color: white;
+}
+
+#setdoscasados {
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    display: none;
+    background-color: aqua;
+    margin-top: 100px;
+}
+
+#dollar {
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    display: none;
+    background-color: aqua;
+    margin-top: 100px;
+}
+
+#fimdesemananorio {
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    display: none;
+    background-color: aqua;
+    margin-top: 100px;
+}
+
+#kallidade {
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    display: none;
+    background-color: aqua;
+    margin-top: 100px;
+}
+
+#maturidade {
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    display: none;
+    background-color: aqua;
+    margin-top: 100px;
+}
+
+#mecacereja {
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    display: none;
+    background-color: aqua;
+    margin-top: 100px;
+}
+
+#vizinhachata {
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    display: none;
+    background-color: aqua;
+    margin-top: 100px;
+}
+
+#quantoquetucobra {
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    display: none;
+    background-color: aqua;
+    margin-top: 100px;
+}
+
+#player {
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    display: block;
+}
+  
